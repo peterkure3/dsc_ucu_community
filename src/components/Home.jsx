@@ -19,10 +19,11 @@ function Home() {
        DSC UCU Community.</p>
 
        <p  className='home-description'>Feel free to become a Member.</p>
-       <div className='home-image'>
-       <img src="https://th.bing.com/th/id/R.c9db375af78893af65c0bffc795f34e6?rik=zM52%2bNTrel7ipQ&pid=ImgRaw&r=0" alt="students" />
 
+       <div className='home-image'>
+        <img src="https://th.bing.com/th/id/R.c9db375af78893af65c0bffc795f34e6?rik=zM52%2bNTrel7ipQ&pid=ImgRaw&r=0" alt="students" />
        </div>
+
     </div>
   )
 };

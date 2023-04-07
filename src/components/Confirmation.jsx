@@ -7,7 +7,7 @@ const Confirmation = () => {
   return (
     <div className='confirmation-container'>
       <h1>Thank you for signing up!</h1>
-      <p>{currentUser.firstName}! You have successfully signed up. 
+      <p>{currentUser?.firstName} ! You have successfully signed up. 
       <br />
       Click the button below to go to your dashboard.</p>
 

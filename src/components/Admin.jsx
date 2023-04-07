@@ -21,7 +21,7 @@ const Admin = () => {
       <ul>
         {users.map(user => (
           <li key={user.id}>
-            {user.firstName} {user.lastName} - Status: {user.status}
+            {user.firstName} {user.lastName} - Role:{user.role}
             <button onClick={() => handleDelete(user.id)}>Delete</button>
           </li>
         ))}

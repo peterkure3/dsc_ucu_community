@@ -7,6 +7,9 @@ import Dashboard from './components/Dashboard';
 import Profile from './components/Profile'
 import Confirmation from './components/Confirmation';
 import Members from './components/Members'
+import Admin from './components/Admin'
+import Events from './components/Events';
+
 
 
 function App() {
@@ -20,6 +23,8 @@ function App() {
         <Route path="/profile" component={Profile} />
         <Route path="/confirmation" component={Confirmation} />
         <Route path="/members" component={Members} />
+        <Route path="/admin" component={Admin} />
+        <Route path="/events" component={Events} />
 
 
 

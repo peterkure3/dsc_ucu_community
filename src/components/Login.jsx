@@ -28,9 +28,15 @@ function Login() {
     const user = users.find((u) => u.email === email && u.password === password);
 
     if (user) {
-      // User is authenticated, redirect to welcome page
-      localStorage.setItem('currentUser', JSON.stringify(user));
-      window.location.href = '/confirmation';
+      // User is authenticated
+      if (user.email === 'peterkure256@gmail.com' && user.firstName === 'Peter' && user.lastName === 'Kure') {
+        // Peter Kure is authenticated, redirect to admin page
+        localStorage.setItem('currentUser', JSON.stringify(user));
+        window.location.href = '/admin';
+      } else {
+        // User is not authorized to access admin page
+        setError('You are not authorized to access this page.');
+      }
     } else {
       // Authentication failed
       setError('Invalid email or password.');
@@ -60,4 +66,3 @@ function Login() {
 }
 
 export default Login;
-

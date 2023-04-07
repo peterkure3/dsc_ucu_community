@@ -43,8 +43,12 @@ const Signup = () => {
     // alert message diplays
     alert('Congratulations, you have registered successfully!');
 
-    // Redirect to confirmation page after loggin in
-    window.location.href = '/confirmation';
+    // Redirect to admin page
+    if (role === 'Club Lead') {
+      window.location.href = '/admin';
+    } else {
+      window.location.href = '/confirmation';
+    }
   };
   return (
     <div className='signup-container'>
