@@ -8,7 +8,6 @@ const Events = () => {
   return (
     <div className="container">
       <h1>Upcoming Events</h1>
-
       <div className="events-grid">
         {events.map((event) => (
           <div className="event-card" key={event.id}>

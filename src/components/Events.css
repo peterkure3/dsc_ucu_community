@@ -1,41 +1,45 @@
 .container {
+    
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 
-.eventsGrid {
+.events-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.eventCard {
-    width: 31%;
+.event-card {
+    margin: 5px;
+    width: 50%;
     margin-bottom: 2rem;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.eventCard img {
+.event-card img {
     width: 100%;
-    height: auto;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
 }
 
-.eventCardContent {
+.event-card-content {
     padding: 1rem;
 }
 
-.eventCardContent h2 {
-    margin-top: 0;
+.event-card-content h2 {
+    margin-top: 10px;
 }
 
-.eventCardContent ul {
+.event-card-content ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.eventCardContent ul li {
+.event-card-content ul li {
     margin-bottom: 0.5rem;
 }
 
@@ -43,3 +47,4 @@
     width: 400px;
     height: 320px;
 }
+
