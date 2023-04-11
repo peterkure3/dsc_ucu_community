@@ -60,7 +60,7 @@ function Login() {
         <br />
         <input type="submit" value="Submit" />
       </form>
-      <p>Don't have an account? <a href="/signup">Sign Up Here</a></p>
+      <p>Don't have an account? <Link to='/signup'>Sign Up Here</Link></p>
     </div>
   );
 }
